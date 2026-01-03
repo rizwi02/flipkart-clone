@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#eaeaea;
+}
+
+/*== NAVBAR == */
+
+nav{
+    width: 100%;
+    background-color: #2a55e5;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav li{
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* logo */
+#logo{
+    font-size: 1.8rem;
+    font-style: italic;
+    color: yellow;
+    margin-right: 40px;
+}
+
+/* search */
+button{
+    background-color: #000dff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0059ff;
+}
+input[type="text"]{
+    margin-left: 90px;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: rgba(128, 128, 128, 0.901);
+    width: 600px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/*  DROPDOWN */
+
+#drop-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 170px;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+#drop-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+#drop-menu ul li{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#drop-menu ul li a{
+    color: #333;
+    display: block;
+}
+
+#drop-menu ul li:hover{
+    background-color: #f2f2f2;
+}
+
+/* ONLY myprofile opens dropdown */
+.profile:hover #drop-menu{
+    display: block;
+}
+
+/*CATEGORY BAR  */
+
+#container{
+    background-color:#ffffff;
+    margin: 15px auto;
+    width: 97%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+#container a{
+    text-decoration: none;
+    color: black;
+}
+
+#container div{
+    width: 10%;
+    text-align: center;
+}
+
+/* SLIDER */
+
+#slider{
+    margin: 20px auto;
+    width: 97%;
+}
+/* SMARTPHONE SECTION */
+#smartphone-section{
+
+    margin-top:0.5%;
+    background-color:white;
+    margin-left: 1%;
+    width: 84%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.h2{
+    font-size: 1rem;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height:18%;
+}
+
+#ad-1 img{
+    margin-left: 2px;
+    position: absolute;
+    right: 1%;
+}
+.phone{
+    justify-self: center;
+    margin-top:4%;
+    line-height: 16px;
+    text-align: center;
+    height: 200px;
+    width: 172px;
+}
+.phone:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+
+}
+.phone a {
+    text-decoration: none;
+    color: black;
+   
+}
+/* ITEMS SECTION */
+#container-3{
+    margin: 10px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+}
+/* individual items */
+.items{
+    margin: 10px;
+    height: 250px;
+    width: 450px;
+}
+/* AD SECTION */
+#container-4{
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.h3{
+    width: 100%;
+    height:2%;
+}
+.cont{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 450px;
+    height:600px;
+}
+.green{
+    color: green;
+}
+.cont a{
+    text-decoration: none;
+    color: black;
+}
+.ad-3{
+    width:480px;
+    height:auto;
+}
+.box-items{
+    width: 200px;
+    height: 250px;
+   border: rgb(247, 242, 242) 1px solid;
+}
+.box-items:hover{
+    box-shadow: #333 0px 0px 1px;
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+/* last container */
+#container-5{
+    height: fit-content;
+    margin: 10px;
+    background-color: white;
+
+}
+h5{
+    font-size: large;
+    font-weight: 600;
+}
+.para{
+    font-family: poppins;
+    font-weight: 200;
+    font-size: small;
+    text-align: justify;
+}
+#written{
+    margin: 10px;
+    background-color: white;
+}
+#footer{
+    background-color:black;
+    color:white;
+    font-weight: 300;
+    font-size: small;
+    padding:20px;
+    margin-top:10px;
+}
